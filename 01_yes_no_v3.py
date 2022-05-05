@@ -3,24 +3,24 @@ Puts the code created in v2 into a loop to make testing easier and more
 efficient.
 """
 
-played_before = ""
-while played_before != "x":
+done_before = ""
+while done_before != "x":
 
     # Ask the user if they have played before
-    played_before = input("Have you played this game before? ").lower()
+    done_before = input("Have you taken this quiz before? ").lower()
 
     # If they say yes, output 'Program Continues'
-    if played_before == "y" or played_before == "yes":
+    if done_before == "y" or done_before == "yes":
         print("Program continues")
 
     # If they say no, output 'Display Instructions'
-    elif played_before == "n" or played_before == "no":
+    elif done_before == "n" or done_before == "no":
         print("Instructions below")
 
     # Otherwise - show error
     else:
         print("Please answer with 'yes' or 'no'")
 
-    print(f"You entered '{played_before}'")
+    print(f"You entered '{done_before}'")
 
 
