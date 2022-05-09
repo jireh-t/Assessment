@@ -1,7 +1,5 @@
-"""Based on 04_check_answer_v2
-Making the code randomly select the questions, so that it is in a different
-order every time. Also convert the 2 lists into just one to make the code
-more concise"""
+"""Based on 04_check_answer_v3
+Make the code into a loop, to make it easier and more efficient for testing"""
 
 import random
 
@@ -23,6 +21,7 @@ random.shuffle(questions)
 count = 0
 for question in questions:
     # Loop to make the question repeat 4 times for testing
+    for item in range (4):
         user_answer = input(question[0]).lower()
         # Check if answer is correct by finding its place on the list
         if user_answer == (question[1]):
@@ -35,6 +34,4 @@ for question in questions:
 
         # Count will go up as the user moves through the questions
         count += 1
-
-
 

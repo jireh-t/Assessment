@@ -35,7 +35,7 @@ def instructions():
     print()
 
 
-# Main Routine go here
+# Main Routine
 played_before = yes_no("Have you taken this quiz before? ")
 
 if played_before == "No":
