@@ -1,5 +1,6 @@
 """Added to 04_check_answer_v3
-Added a score counter to calculate and tell the user's score at the end"""
+Added a score counter to calculate and tell the user's score at the end and
+feedback"""
 
 import random
 

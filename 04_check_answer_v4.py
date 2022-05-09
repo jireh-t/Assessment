@@ -1,5 +1,7 @@
 """Based on 04_check_answer_v3
-Make the code into a loop, to make it easier and more efficient for testing"""
+Make the code into a loop, to make it easier and more efficient for testing
+It repeats each question 4 times, so I can carry out my tests
+"""
 
 import random
 

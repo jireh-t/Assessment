@@ -36,6 +36,7 @@ def instructions():
 
 
 # Main Routine
+print("Welcome to the numbers Maori quiz")
 played_before = yes_no("Have you taken this quiz before? ")
 
 if played_before == "No":
