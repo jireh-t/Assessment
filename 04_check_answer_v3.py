@@ -33,7 +33,8 @@ for question in questions:
             print(f"The answer was {question[1]}")
             print()
 
-        # Count will go up as the user moves through the questions
+        # Count will go up as the user moves through the questions and
+    # eventually finish the quiz
         count += 1
 
 
