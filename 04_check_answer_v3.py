@@ -20,7 +20,9 @@ questions = [["Maori word for 1: ", "tahi"],
 
 random.shuffle(questions)
 
+# Number of rounds will go up in count
 count = 0
+
 for question in questions:
     # Loop to make the question repeat 4 times for testing
         user_answer = input(question[0]).lower()
