@@ -1,6 +1,6 @@
-"""Added to 04_check_answer_v3
-Added a score counter, to tell the user their score at the end and give them
-some feedback"""
+"""Adding to 04_check_answer_v3
+Added a score counter to give the user their score at the end and some
+feedback"""
 
 import random
 
@@ -19,7 +19,12 @@ questions = [["Maori word for 1: ", "tahi"],
 
 random.shuffle(questions)
 
+# Number of rounds will go up in count
 count = 0
+
+# Score counter
+score = 0
+
 for question in questions:
     # Loop to make the question repeat 4 times for testing
         user_answer = input(question[0]).lower()
@@ -27,6 +32,7 @@ for question in questions:
         if user_answer == (question[1]):
             print("Correct")
             print()
+            score += 1
         else:
             print("Wrong")
             print(f"The answer was {question[1]}")
@@ -35,6 +41,19 @@ for question in questions:
         # Count will go up as the user moves through the questions and
     # eventually finish the quiz
         count += 1
+
+# Give user score
+print(f"Your score was {score}/10")
+
+# Give user feedback
+if score < 6:
+    print("You might need to do some more studying")
+
+elif score > 5 and score < 10:
+    print("Great work!")
+
+else:
+    print("Wow amazing job!!")
 
 
 

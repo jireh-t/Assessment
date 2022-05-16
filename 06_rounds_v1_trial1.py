@@ -1,41 +1,9 @@
-"""Maori Quiz base component
-Components added after they have been created and tested
+"""Component 4 - game mechanics and looping v1
+Adding to the 05_quiz_function_v1
+Allows the user to play again if they wish
 """
 import random
 
-# yes/no checking function
-def yes_no(question_text):
-    while True:
-
-        # Ask the user if they have played before
-        answer = input(question_text).lower()
-
-        # If they say yes, output 'Program Continues'
-        if answer == "y" or answer == "yes":
-            answer = "Yes"
-            return answer
-
-        # If they say no, output 'Display Instructions'
-        elif answer == "n" or answer == "no":
-            answer = "No"
-            return answer
-
-        # Otherwise - show error
-        else:
-            print("Please answer with 'yes' or 'no'")
-
-
-# Function to display instructions
-def instructions():
-    print("*** How to Play ***")
-    print()
-    print("The rules of the game will go here")
-    print()
-    print("Program continues")
-    print()
-
-
-# Quiz function
 def quiz():
 
     rounds_played = 0
@@ -110,17 +78,10 @@ def quiz():
     print(f"You played {rounds_played} round(s)")
     print("Goodbye!")
 
-
 # Main Routine
-print("Welcome to the numbers Maori quiz")
-print()
-played_before = yes_no("Have you taken this quiz before? ")
-print()
-
-if played_before == "No":
-    instructions()
-
-else:
-    print("Program continues")
 
 quiz()
+
+
+
+
