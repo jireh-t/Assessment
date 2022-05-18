@@ -1,7 +1,8 @@
-"""Maori Quiz base component
-Components added after they have been created and tested
+"""Maori Quiz base component v2
+Components have been added and full assembled outcome tested
 """
 import random
+
 
 # yes/no checking function
 def yes_no(question_text):
@@ -23,15 +24,21 @@ def yes_no(question_text):
         # Otherwise - show error
         else:
             print("Please answer with 'yes' or 'no'")
+            print()
 
 
 # Function to display instructions
 def instructions():
     print("*** How to Play ***")
     print()
-    print("The rules of the game will go here")
+    print("A question will come on the screen")
+    print("Enter your answer")
+    print("The quiz will tell you if you are correct or wrong")
     print()
-    print("Program continues")
+    print("At the end of each round you have the option to play again if you "
+          "wish")
+    print()
+    print("See if you can get 10/10!")
     print()
 
 
@@ -74,7 +81,7 @@ def quiz():
 
         # Tell user what round it is
         rounds_played += 1
-        print(formatter("+", f"Round {round}"))
+        print(formatter("+", f"Round {rounds_played}"))
         print()
 
         for question in questions:
@@ -96,16 +103,17 @@ def quiz():
 
         # Give user score
         print(formatter("^", f"Your score was {score}/10"))
+        print()
 
         # Give user feedback
         if score < 6:
             print("You might need to do some more studying")
 
-        elif score > 5 and score < 10:
-            print("Great work!")
+        elif score == 10:
+            print("Wow amazing job!!")
 
         else:
-            print("Wow amazing job!!")
+            print("Great work")
 
         # Ask user if they want to play again
         print()
@@ -116,6 +124,7 @@ def quiz():
     # Goodbye message
     print("Thanks for playing")
     print(f"You played {rounds_played} round(s)")
+    print()
     print(formatter("*", "Goodbye"))
 
 
@@ -127,9 +136,7 @@ print()
 
 if played_before == "No":
     instructions()
+    quiz()
 
 else:
-    print("Program continues")
-    print()
-
-quiz()
+    quiz()

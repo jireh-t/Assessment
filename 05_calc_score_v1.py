@@ -49,12 +49,11 @@ print(f"Your score was {score}/10")
 if score < 6:
     print("You might need to do some more studying")
 
-elif score > 5 and score < 10:
-    print("Great work!")
-
-else:
+elif score == 10:
     print("Wow amazing job!!")
 
+else:
+    print("Great work")
 
 
 
