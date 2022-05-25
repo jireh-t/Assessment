@@ -116,8 +116,8 @@ def quiz():
 
         # Ask user if they want to play again
         print()
-        play_again = input("Do you want to play another round\n<enter> to play"
-                           " again or 'X' to exit").lower()
+        play_again = input("Do you want to play another round?\nAny button to "
+                           "play again or 'X' to exit").lower()
         print()
 
     # Goodbye message
