@@ -97,7 +97,7 @@ def quiz():
                 print()
 
                 # Count will go up as the user moves through the questions and
-            # eventually finish the quiz
+                # eventually finish the quiz
                 count += 1
 
         # Give user score
